@@ -6,7 +6,7 @@ OS=$(uname -s | tr '[:upper:]' '[:lower:]')
 FILE_NAME="backhaul_${OS}_${ARCH}.tar.gz"
 
 echo "Downloading $FILE_NAME..."
-curl -L -O "https://github.com/msaebi031/Backhaul/releases/latest/download/$FILE_NAME"
+curl -L -O "https://github.com/Musixal/Backhaul/releases/latest/download/$FILE_NAME"
 
 mkdir -p /root/backhaul && tar -xzf "$FILE_NAME" -C /root/backhaul && \
 rm -f "$FILE_NAME" /root/backhaul/LICENSE /root/backhaul/README.md && \
